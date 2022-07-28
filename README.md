@@ -1,100 +1,19 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-## Your Task
+Deployment link: https://rodbennett.github.io/daily-schedule/
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+In this assignment, I refactored some code to make a daily scheduler.  First, the day and date is displayed at the top of the page and stays current in real time with momnent.js:
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
-
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+<img width="756" alt="Screen Shot 2022-07-28 at 4 30 09 PM" src="https://user-images.githubusercontent.com/106923428/181648418-162c4712-8551-4846-a266-b439f581d464.png">
 
 
-## Grading Requirements
+Second, There are rows of textareas for the user to enter "to dos" for the day.  Next to the text area are "Save" buttons which save the content of that particular row into local storage. This data remains visible even after refreshes thorugh the getItem function of JavaScript.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+<img width="660" alt="Screen Shot 2022-07-28 at 4 30 34 PM" src="https://user-images.githubusercontent.com/106923428/181648836-576a836e-47ce-4e3c-a148-0877761bfb8b.png">
 
-This Challenge is graded based on the following criteria: 
+Third, there is a "Clear Entries" button which clears all the textareas of previos entries to be used again the next day.
 
-### Technical Acceptance Criteria: 40%
+<img width="671" alt="Screen Shot 2022-07-28 at 4 32 26 PM" src="https://user-images.githubusercontent.com/106923428/181648945-ca90c013-9c2b-4ec4-b98e-fd1f74d2630f.png">
 
-* Satisfies all of the above acceptance criteria plus the following:
+This activity was straightforward enough, though I did have trouble getting each "save" button to correspond to each row of textarea.  I intutively knew there was an elegant and simple way to do this without setting numerous lines of code for each button.  After quite a bit of research and a little help from a tutor, I was able to get it straightened out.
 
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-# daily-schedule
