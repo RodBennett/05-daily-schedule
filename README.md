@@ -16,5 +16,11 @@ Third, there is a "Clear Entries" button which clears all the textareas of previ
 
 <img width="671" alt="Screen Shot 2022-07-28 at 4 32 26 PM" src="https://user-images.githubusercontent.com/106923428/181648945-ca90c013-9c2b-4ec4-b98e-fd1f74d2630f.png">
 
+Fourth, each row fot he timeblocks changes color according to the hour of the day.  Hence, grey is for past, red is for present, and green is for future.
+
+
+<img width="653" alt="Screen Shot 2022-08-20 at 4 23 41 PM" src="https://user-images.githubusercontent.com/106923428/185768035-b9ac3f58-6a89-4f0b-89eb-0ee4c9265dfe.png">
+
+
 This activity was straightforward enough, though I did have trouble getting each "save" button to correspond to each row of textarea.  I intutively knew there was an elegant and simple way to do this without setting numerous lines of code for each button.  After quite a bit of research and a little help from a tutor, I was able to get it straightened out.
 
