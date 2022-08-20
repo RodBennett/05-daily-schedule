@@ -37,3 +37,4 @@ $('.clear-button').on('click', function() {
 // code to change color scheme according to the day
 
 
+
