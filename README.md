@@ -1,6 +1,8 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
 [Deployment link](https://rodbennett.github.io/05-daily-schedule/)
+
+
 In this assignment, I refactored some code to make a daily scheduler.  First, the day and date is displayed at the top of the page and stays current in real time with momnent.js:
 
 <img width="756" alt="Screen Shot 2022-07-28 at 4 30 09 PM" src="https://user-images.githubusercontent.com/106923428/181648418-162c4712-8551-4846-a266-b439f581d464.png">
