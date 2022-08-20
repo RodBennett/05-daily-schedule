@@ -1,13 +1,6 @@
 // Global variables
 let presentTime = parseInt(moment().format('H'));
 
-console.log("present", presentTime)
-//let hourCheck = time.indexOf(presentTime)
-
-
-// const textArea = $('.textarea')
-// let dataEntries = [ '#A', '#B', '#C', '#D', '#E', '#F', '#G', '#H', '#I']
-let toDos = ['']
 
 // // current date and time
 var today = moment().format('[Today is ] MMM Do, YYYY');
