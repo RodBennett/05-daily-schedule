@@ -1,6 +1,10 @@
 // Global variables
-// let presentTime = parseInt(moment().format('H'))
-// let hourCheck = time.indexOf(presentTime)
+let presentTime = parseInt(moment().format('H'));
+
+console.log("present", presentTime)
+//let hourCheck = time.indexOf(presentTime)
+
+
 // const textArea = $('.textarea')
 // let dataEntries = [ '#A', '#B', '#C', '#D', '#E', '#F', '#G', '#H', '#I']
 let toDos = ['']
@@ -35,6 +39,24 @@ $('.clear-button').on('click', function() {
 })
 
 // code to change color scheme according to the day
+$(".textarea").each(
+    function changeColor(){
+    let hourCheck= $(this).parent().attr("id");
+    hourCheck = parseInt(hourCheck)
+     console.log(hourCheck)
+    if (presentTime === hourCheck) {
+        $(this).addClass('present')
+    } else if (presentTime > hourCheck) {
+        $(this).addClass('past')
+    } else if (presentTime < hourCheck) {
+        $(this).addClass('future')
+    } else {
+       return; 
+    }
+
+})
+
+
 
 
 
