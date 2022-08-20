@@ -1,6 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-Deployment link: https://rodbennett.github.io/daily-schedule/
+[Deployment link](https://rodbennett.github.io/05-daily-schedule/)
+
 
 In this assignment, I refactored some code to make a daily scheduler.  First, the day and date is displayed at the top of the page and stays current in real time with momnent.js:
 
